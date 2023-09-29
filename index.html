@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="lib/jquery-3.6.3.js"></script>
+    <title>Web Solution</title>
+</head>
+<body>
+    <div class="hero-sec" >
+        <div class="head-nav" id="head-nav">
+            <div class="logo">
+                <h1>FF</h1>
+            </div>
+            <div class="navbar" id="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Feedbacks</a></li>
+                    <li><p class="pp" id="pp">&#9881;</p></li>
+                </ul>
+            </div>
+            <script>
+        
+            </script>
+            <div class="signup-btn">
+                <!-- <input type="button" value="Sign up / Sign in"> -->
+                <!-- <button>Sign up / sign in</button> -->
+                <a href="#">Sign up /Sign in</a>
+            </div>
+            <div class="menu-btn" id="menu-btn">
+                <div class="top menu"></div>
+                <div class="middle menu"></div>
+                <div class="last menu"></div>
+            </div>
+            <script>
+                let navbar = document.getElementById("navbar");
+                let menubtn = document.getElementById("menu-btn");
+                let pp = document.getElementById("pp");
+                let elm = document.body;
+                let headsec = document.getElementById("head-nav");
+
+                menubtn.onclick=()=>{
+                    if(navbar.style.display === "none"){
+                        navbar.style.display = "block";
+                        navbar.style.transition = "1s";
+                    }else{
+                        navbar.style.display = "none";
+                        navbar.style.transition = "1s";
+                    }
+                }
+                
+        
+                pp.onclick = ()=>{
+                    elm.classList.toggle("dark-mode");
+                    headsec.classList.toggle("head-add");
+                }
+            </script>
+        </div>
+        <div class="hero-sec-text">
+            <p>...we are Specialized in the creation of web pages...</p>
+            <h1>Free Fire <br> Solutions Agency</h1>
+            <a href="">Sign Up ></a>
+        </div>
+    </div>
+    <div class="service">
+        <div class="service-head">
+            <h1>Our Services</h1>
+        </div>
+        <div class="service-cards">
+            <div class="cards">
+                <div class="cards-icon">
+                    <p>&#9775;</p>
+                </div>
+                <div class="cards-text">
+                    <p>Free Delivery</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cards-icon">
+                    <p>&#9775;</p>
+                </div>
+                <div class="cards-text">
+                    <p>Free Delivery</p>
+                </div>
+            </div>
+            <div class="cards cards-extra">
+                <div class="cards-icon">
+                    <p>&#9775;</p>
+                </div>
+                <div class="cards-text">
+                    <p>Free Delivery</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cards-icon">
+                    <p>&#9775;</p>
+                </div>
+                <div class="cards-text">
+                    <p>Free Delivery</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cards-icon">
+                    <p>&#9775;</p>
+                </div>
+                <div class="cards-text">
+                    <p>Free Delivery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="choose">
+        <div class="choose-pic">
+            <img src="../New Web/images/woman Tab.jpg" alt="">
+        </div>
+        <div class="choose-main-texts">
+            <div class="choose-main-head">
+                <h1>Why Choose Us?</h1>
+            </div>
+            <div class="choose-main-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="ach">
+        <div class="ach-main-texts">
+            <div class="ach-main-text-head">
+                <h2>We've Some Achievements from Global Partners</h2>
+            </div>
+            <div class="ach-main-text-cards">
+                <div class="ach-card">
+                    <div class="ach-card-icon">
+                        <p>&#9773;</p>
+                    </div>
+                    <div class="ach-card-text">
+                        100+ <br> <span>Japan</span>
+                    </div>
+                </div>
+                <div class="ach-card">
+                    <div class="ach-card-icon">
+                        <p>&#9732;</p>
+                    </div>
+                    <div class="ach-card-text">
+                        100+ <br> <span>New York</span>
+                    </div>
+                </div>
+                <div class="ach-card">
+                    <div class="ach-card-icon">
+                        <p>&#9764;</p>
+                    </div>
+                    <div class="ach-card-text">
+                        100+ <br> <span>Taiwan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ach-pic">
+            <img src="../New Web/images/man interview.jpg" alt="">
+        </div>
+    </div>
+    <div class="template">
+        <div class="temp-head">
+            <h1>Lets See Our Popular Website Template</h1>
+        </div>
+        <div class="temp-nav">
+            <ul>
+                <li><a href="#">Graphics</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Arts</a></li>
+                <li><a href="#">E-Commerce</a></li>
+                <li><a href="#">Medical</a></li>
+                <li><a href="#">Education</a></li>
+            </ul>
+        </div>
+        <div class="temp-cards">
+            <div class="card-sec1">
+                <div class="temp-card card1-sec1">
+                    <div class="card-image">
+                        <img src="../New Web/images/homepage1.png" alt="">
+                    </div>
+                </div>
+                <div class="temp-card card2-sec2">
+                    <div class="card-image">
+                        <img src="../New Web/images/homepage2.png" alt="">
+                    </div>
+                </div>
+                <div class="temp-card card3-sec3">
+                    <div class="card-image">
+                       <img src="../New Web/images/homepage3.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card-sec2">
+                <div class="temp-card card1-sec1">
+                    <div class="card-image">
+                        <img src="../New Web/images/homepage4.png" alt="">
+                    </div>
+                </div>
+                <div class="temp-card card2-sec2">
+                    <div class="card-image">
+                        <img src="../New Web/images/homepage5.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="temp-card card3-sec3">
+                    <div class="card-image">
+                       <img src="../New Web/images/homepage6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="how">
+        <div class="how-head">
+            <h1>How Do We Work?</h1>
+        </div>
+        <div class="art-icons">
+            <div class="icons">
+                <div class="icon">
+                    <p>&#9872;</p>
+                </div>
+                <div class="text">
+                    <p>Unique Coding</p>
+                </div>
+            </div>
+            <div class="icons icon1">
+                <div class="icon">
+                    <p>&#9851;</p>
+                </div>
+                <div class="text">
+                    <p>Code Recycling</p>
+                </div>
+            </div>
+            <div class="icons">
+                <div class="icon">
+                    <p>&#9874;</p>
+                </div>
+                <div class="text">
+                    <p>Mallowy Codes</p>
+                </div>
+            </div>
+            <div class="icons icon1">
+                <div class="icon">
+                    <p>&#9879;</p>
+                </div>
+                <div class="text">
+                    <p>Code Ambience</p>
+                </div>
+            </div>
+            <div class="icons">
+                <div class="icon">
+                    <p>&#9988;</p>
+                </div>
+                <div class="text">
+                    <p>Code Tayloring</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="black-tape">
+        <div class="black-tape-sec1">
+            <div class="icon">
+                <p>&#9885;</p>
+            </div>
+            <div class="text">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            </div>
+            <div class="icon2">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: poppins;
+}
+body{
+    position: relative;
+    /* background: #fff; */
+}
+.pp{
+    margin-top: -12px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+}
+.dark-mode
+{
+    background: #000;
+    color: white;
+}
+.hero-sec{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/web-design-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;    color: #fff;
+
+}
+.hero-sec .head-nav{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.head-add{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.hero-sec .head-nav .logo h1{
+    font-family: cursive;
+    color: #000;
+}
+.hero-sec .head-nav .navbar{
+    margin-top: 9px;
+}
+.hero-sec .head-nav .navbar ul{
+    display: flex;
+}
+.hero-sec .head-nav .navbar ul li{
+    border-radius: 10px;
+    padding: 7px;
+    margin: 0 7px;
+    transition: 1s;
+}
+.hero-sec .head-nav .navbar ul li a{
+    color: black;
+    font-size: 18px;
+}
+.hero-sec .head-nav .signup-btn{
+    margin-top: 15px;
+}
+.hero-sec .head-nav .signup-btn a{
+    background: #000;
+    padding: 10px;
+    border-radius: 30px;
+    color: #fff;
+}
+.hero-sec .menu-btn{
+    width: 40px;
+    padding: 0 5px;
+    height: 40px;
+    background: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.hero-sec .menu-btn .menu{
+    background: #fff;
+    height: 3px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 8px 0;
+}
+.hero-sec .hero-sec-text{
+    margin-top: 200px;
+    padding: 0 40px;
+}
+.hero-sec .hero-sec-text h1{
+    font-size: 50px;
+    margin: 20px 0 40px 0;
+}
+.hero-sec .hero-sec-text a{
+    background: rgb(243, 223, 47);
+    padding: 15px 35px;
+    border-radius: 30px;
+    transition: 1s;
+    /* margin: 0px 0; */
+}
+.hero-sec .hero-sec-text a:hover{
+    padding: 15px 100px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+}
+@media screen and (max-width: 900px){
+    .hero-sec .head-nav .navbar{
+        position: fixed;
+        background: rgb(12, 24, 136);
+        height: 100vh;
+        top: -10px;
+        width: 50%;
+        right: 0;
+        text-align: center;
+        display: none;
+        transition: 1s;
+        z-index: 2;
+    }
+    .hero-sec .head-nav .navbar ul{
+        display: block;
+        margin-top: 200px;
+    }
+    .hero-sec .head-nav .navbar ul li{
+        width: 100%;
+    }
+    .hero-sec .head-nav .navbar ul li:hover{
+        background: rgb(13, 37, 252);
+    }
+    .hero-sec .head-nav .navbar ul li a{
+        color: #fff;
+        font-size: 18px;
+    }
+    .hero-sec .menu-btn{
+        display: block;
+        position: fixed;
+        right: 20px;
+        z-index: 2;
+    }
+    .hero-sec .head-nav .signup-btn{
+        display: none;
+    }
+}
+/* service section */
+.service{
+    background: rgba(214, 214, 214, 0.426);
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+    margin: auto;
+} 
+.service .service-head
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.service .service-head h1
+{
+    font-family: cursive;
+    text-shadow: 3px 3px 3px grey;
+}
+
+.service .service-cards
+{
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+.service .service-cards .cards
+{
+    width: 19%;
+    border-radius: 5px;
+    text-align: center;
+    background: rgb(2, 4, 26);
+    padding: 7px;
+    color: white;
+}
+/* .service .service-cards .cards-extra
+{
+    height: 200px;
+} */
+.service .service-cards .cards .cards-icon p
+{
+    color: orange;
+    font-size: 40px;
+}
+/* choose */
+.choose
+{
+    position: relative;
+    width: 95%;
+    display: flex;
+    margin: 50px auto;
+}
+.choose .choose-pic
+{
+    position: relative;
+    width: 25%;
+}
+.choose .choose-pic img
+{
+    /* position: absolute; */
+    height: fit-content;
+    margin: auto;
+    top: 20%;
+    width: 100%;
+    margin: auto;
+}
+.choose .choose-main-texts
+{
+    margin: 0 auto 20px;
+    width: 65%;
+}
+.choose .choose-main-texts .choose-main-head h1
+{
+    font-family: cursive;
+    text-shadow: 3px 3px 3px grey;
+}
+/* AChievements */
+.ach
+{
+    background: rgba(214, 214, 214, 0.426);
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+
+    margin: auto;
+}
+.ach .ach-main-texts
+{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.ach .ach-pic
+{
+    width: 35%;
+}
+.ach .ach-pic img
+{
+    width: 100%;
+    height: 250px;
+}
+.ach .ach-main-texts .ach-main-text-head h2
+{
+    font-family: cursive;
+    text-shadow: 3px 3px 3px grey;
+}
+.ach .ach-main-texts .ach-main-text-cards
+{
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+    margin:40px auto 0;
+    
+}
+.ach .ach-main-texts .ach-main-text-cards .ach-card
+{
+    font-weight: 800;
+    text-align: center;
+}
+.ach .ach-main-texts .ach-main-text-cards .ach-card .ach-card-icon p
+{
+    color: orange;
+    font-size: 30px;
+    filter: drop-shadow(3px 3px 3px rgb(27, 24, 24));
+}
+/* template */
+.template,
+.how
+{
+    width: 100%;
+    padding: 20px;
+}
+.template .temp-head,
+.how .how-head
+{
+    width: fit-content;
+    margin: auto;
+}
+.template .temp-head h1,
+.how .how-head h1
+{
+    font-family: cursive;
+    text-shadow: 3px 3px 3px grey;
+}
+.template .temp-nav 
+{
+    margin: 40px auto;
+    width: fit-content;
+}
+.template .temp-nav ul
+{
+    display: flex;
+}
+.template .temp-nav ul li
+{
+    background: rgb(60, 60, 60);
+    border-radius: 10px;
+    padding: 3px 30px;
+    margin: 0 10px;
+    transition: .5s;
+}
+.template .temp-nav ul li:hover
+{
+    background: #000;
+    transform: translate(-10px);
+}
+.template .temp-nav ul li a
+{
+    color: #fff;
+}
+.template .temp-cards
+{
+    width: 90%;
+    margin: auto;
+}
+.template .temp-cards .card-sec1,
+.template .temp-cards .card-sec2
+{
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.template .temp-cards .card-sec1 .temp-card,
+.template .temp-cards .card-sec2 .temp-card
+{
+    height: 200px;
+    width: 30%;
+    border: 15px solid green;
+}
+.template .temp-cards .card-sec1 .temp-card .card-image,
+.template .temp-cards .card-sec2 .temp-card .card-image
+{
+    height: 100%;
+    width: 100%;
+}
+.template .temp-cards .card-sec1 .temp-card .card-image img,
+.template .temp-cards .card-sec2 .temp-card .card-image img
+{
+    height: 100%;
+    width: 100%;
+    filter: blur(2px);
+    animation: blur 2s linear infinite;
+    transition: 1s;
+}
+@keyframes blur
+{
+    0%{
+        filter: blur(2px);
+    }
+    50%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(3px);
+    }
+}
+/* How */
+.how .art-icons
+{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.how .art-icons .icons
+{
+    width: 20%;
+    margin: 70px auto;
+    /* border: 2px solid black;  */
+}
+.how .art-icons .icon1
+{
+    width: 20%;
+    margin: 150px auto; 
+}
+.how .art-icons .icons .icon p,
+.black-tape .black-tape-sec1 .icon p
+{
+    position: relative;
+    width: 50%;
+    margin: 0 auto 20px;
+    font-size: 50px;
+    font-weight: 900;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 50%;
+    /* border: 2px solid black;  */
+    background: green;
+}
+.how .art-icons .icons .text p
+{
+    font-weight: 600;
+    font-family: cursive;
+}
+.black-tape
+{
+    padding: 30px 10px;
+    background: #000;
+    display: flex;
+    color: #ffff;
+}
+.black-tape .black-tape-sec1
+{
+    padding: 20px 10px;
+    display: flex;
+    background: rgb(235, 0, 0);
+}
